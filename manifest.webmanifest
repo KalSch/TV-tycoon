@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "TV Station Tycoon",
+  "short_name": "TV Tycoon",
+  "description": "Build an independent television station, compete with historical networks, and shape an alternate broadcasting future.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#121f2c",
+  "theme_color": "#121f2c",
+  "categories": ["games", "entertainment", "simulation"],
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"icons/icon-maskable-192.png","sizes":"192x192","type":"image/png","purpose":"maskable"},
+    {"src":"icons/icon-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ]
+}
