@@ -1,16 +1,10 @@
-# TV Station Tycoon v1.2 — PWA hotfix
+# TV Station Tycoon v2.0.0
+Deployment-ready GitHub Pages PWA.
 
-This build fixes the blank-screen startup failure in v1.1 and improves recovery/debugging.
+## Install
+Replace the repository-root app files with these files, preserve `icons/`, commit to `main`, and allow Pages to redeploy.
 
-## What changed
-- Replaced the malformed/minified startup JavaScript with readable validated JavaScript.
-- Added defensive local-save loading and migration defaults.
-- Added a visible startup error screen instead of a silent blank page.
-- Versioned CSS/JS requests and service-worker cache as `1.2.0`.
-- Service worker deletes older caches on activation and prefers fresh network assets.
-- Keeps relative paths for GitHub Pages project hosting under `/TV-tycoon/`.
+## v2
+Seven-day hourly schedule editor; expanded program library; weekly ratings/revenue/cost/profit simulation; NBC/CBS/ABC/DuMont 1950 competitive baseline; ratings and finance history; player-controlled facilities; campaign history; v2 offline cache; visible startup-error handling.
 
-## Deploy to GitHub Pages
-Replace the repository root files with the files in this package, preserving the `icons/` folder. Commit the changes and let GitHub Pages deploy.
-
-After deployment, open the Pages URL in Safari. If an old installed Home Screen copy is open, close it and first load the Pages URL in Safari so the new service worker can activate.
+v2 uses a separate save key so the stable v1.2 save is not overwritten.
