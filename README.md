@@ -1,19 +1,18 @@
-# TV Station Tycoon v2.2.0
+# TV Station Tycoon v2.3.0 — Living History Foundation
 
-## New in v2.2
-- New Game control in Station, protected by two confirmations.
-- Historical Program Market separated from the station's Program Library.
-- Real first-run syndicated programs unlock on historically documented dates.
-- Initial researched records:
-  - The Cisco Kid — September 5, 1950
-  - The Adventures of Wild Bill Hickok — April 15, 1951
-  - The Adventures of Kit Carson — August 11, 1951
-  - Boston Blackie — September 1951
-- Historical availability is labeled HISTORICAL.
-- Licensing fees, airing costs, and game appeal values are explicitly ESTIMATED.
-- Acquired programs immediately enter the station library and schedule selectors.
-- Local-program creation remains available separately.
-- Existing v2 saves carry forward.
-- Service-worker cache bumped to v2.2.0.
+## New systems
+- Contracts tab with active syndicated rights and four-week renewal windows.
+- Competitive rights bidding: historical availability creates the opportunity; simulated market competition determines whether WXXX wins the rights.
+- Syndicated licenses expire instead of granting permanent ownership.
+- Renewal bids extend a show's campaign career by another contract season.
+- Player-created local programs now track seasons and can be renewed.
+- New historical market opportunities generate notices as the calendar reaches their availability date.
+- Timeline tab begins the "Our Timeline vs. History" divergence ledger.
+- Existing v2.2 saves migrate to schema v3. Previously acquired historical programs receive a migration contract so the save remains playable.
+- New Game creates the richer v2.3 campaign structure natively.
+- Service worker cache bumped to v2.3.0.
 
-The historical market is intentionally small in this build; it establishes the data model that can be expanded across television history without inventing availability dates.
+## Design rule
+History creates the circumstances. The simulation determines the consequences. The player changes the timeline.
+
+This build establishes the contract/career/divergence architecture. Historical cancellation/rescue events can now be added to the Opportunity Desk without making their historical outcomes mandatory.
