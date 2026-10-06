@@ -1,10 +1,19 @@
-# TV Station Tycoon v2.1.0
-## Changes
-- Save Game and Advance Week moved to the persistent header on every tab.
-- Previous-week rating and profit/loss remain visible in the header.
-- Programming now supports adding Local Production or Acquired/Syndicated programs.
-- New programs immediately appear in Schedule selectors.
-- Added title, genre, source, duration, target audience, per-airing cost, and expected appeal fields.
-- Finance tab now labels current ledger categories and last-week results, ready for future advertising/payroll/contracts/debt/maintenance systems.
-- New v2.1 service-worker cache.
-- Uses the existing v2 save namespace, preserving a v2.0 campaign.
+# TV Station Tycoon v2.2.0
+
+## New in v2.2
+- New Game control in Station, protected by two confirmations.
+- Historical Program Market separated from the station's Program Library.
+- Real first-run syndicated programs unlock on historically documented dates.
+- Initial researched records:
+  - The Cisco Kid — September 5, 1950
+  - The Adventures of Wild Bill Hickok — April 15, 1951
+  - The Adventures of Kit Carson — August 11, 1951
+  - Boston Blackie — September 1951
+- Historical availability is labeled HISTORICAL.
+- Licensing fees, airing costs, and game appeal values are explicitly ESTIMATED.
+- Acquired programs immediately enter the station library and schedule selectors.
+- Local-program creation remains available separately.
+- Existing v2 saves carry forward.
+- Service-worker cache bumped to v2.2.0.
+
+The historical market is intentionally small in this build; it establishes the data model that can be expanded across television history without inventing availability dates.
