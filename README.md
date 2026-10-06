@@ -1,10 +1,10 @@
-# TV Station Tycoon v2.0.0
-Deployment-ready GitHub Pages PWA.
-
-## Install
-Replace the repository-root app files with these files, preserve `icons/`, commit to `main`, and allow Pages to redeploy.
-
-## v2
-Seven-day hourly schedule editor; expanded program library; weekly ratings/revenue/cost/profit simulation; NBC/CBS/ABC/DuMont 1950 competitive baseline; ratings and finance history; player-controlled facilities; campaign history; v2 offline cache; visible startup-error handling.
-
-v2 uses a separate save key so the stable v1.2 save is not overwritten.
+# TV Station Tycoon v2.1.0
+## Changes
+- Save Game and Advance Week moved to the persistent header on every tab.
+- Previous-week rating and profit/loss remain visible in the header.
+- Programming now supports adding Local Production or Acquired/Syndicated programs.
+- New programs immediately appear in Schedule selectors.
+- Added title, genre, source, duration, target audience, per-airing cost, and expected appeal fields.
+- Finance tab now labels current ledger categories and last-week results, ready for future advertising/payroll/contracts/debt/maintenance systems.
+- New v2.1 service-worker cache.
+- Uses the existing v2 save namespace, preserving a v2.0 campaign.
