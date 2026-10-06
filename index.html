@@ -7,22 +7,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="TV Tycoon">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="description" content="Build an independent television station, compete with historical networks, and shape an alternate broadcasting future.">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-  <link rel="stylesheet" href="style.css">
   <title>TV Station Tycoon</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="./style.css?v=1.2.0">
 </head>
 <body>
-  <noscript>TV Station Tycoon requires JavaScript.</noscript>
-  <div id="app"></div>
-  <script src="app.js"></script>
-  <script>
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(console.error));
-    }
-  </script>
+  <div id="app"><div class="boot"><h1>TV Station Tycoon</h1><p>Starting station…</p></div></div>
+  <noscript><div class="fatal">TV Station Tycoon requires JavaScript.</div></noscript>
+  <script src="./app.js?v=1.2.0"></script>
 </body>
 </html>

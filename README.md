@@ -1,25 +1,16 @@
-# TV Station Tycoon v1.1 — Deployment-ready PWA
+# TV Station Tycoon v1.2 — PWA hotfix
 
-## Run locally
-A PWA must be served over HTTP/HTTPS; do not double-click index.html for full PWA behavior.
+This build fixes the blank-screen startup failure in v1.1 and improves recovery/debugging.
 
-Python:
-`python3 -m http.server 8080`
-Then open `http://localhost:8080/`.
+## What changed
+- Replaced the malformed/minified startup JavaScript with readable validated JavaScript.
+- Added defensive local-save loading and migration defaults.
+- Added a visible startup error screen instead of a silent blank page.
+- Versioned CSS/JS requests and service-worker cache as `1.2.0`.
+- Service worker deletes older caches on activation and prefers fresh network assets.
+- Keeps relative paths for GitHub Pages project hosting under `/TV-tycoon/`.
 
-## Deploy
-Upload the contents of this folder to any static HTTPS host (GitHub Pages, Netlify, Cloudflare Pages, Vercel static hosting, etc.). No build step is required.
+## Deploy to GitHub Pages
+Replace the repository root files with the files in this package, preserving the `icons/` folder. Commit the changes and let GitHub Pages deploy.
 
-## iPhone/iPad install
-Open the deployed HTTPS URL in Safari, tap Share, then **Add to Home Screen**.
-
-## PWA contents
-- Web app manifest with standard and maskable icons
-- Apple touch icon/mobile metadata
-- Service worker with app-shell caching
-- Relative paths so the app works from a subdirectory
-- Persistent game saves remain handled by the game code in the browser
-
-## Version
-PWA packaging: 1.1.0
-Game prototype: v1
+After deployment, open the Pages URL in Safari. If an old installed Home Screen copy is open, close it and first load the Pages URL in Safari so the new service worker can activate.
